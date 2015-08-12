@@ -14,11 +14,23 @@
 - (int)match:(NSArray *)otherCards {
     int score = 0;
     if (otherCards.count == 1) {
-        PlayingCard *otherCard = [otherCards firstObject];
-        if ([self.suit isEqualToString:otherCard.suit]) {
-            score = 1;
-        } else if (self.rank == otherCard.rank) {
-            score = 4;
+        //数组的firstObject方法返回的类型是个id类型，这里通过isKindOfClass 判断是否是PlayingCard类型增强程序健壮性
+        id card = [otherCards firstObject];
+        if ([card isKindOfClass:[PlayingCard class]]) {
+            PlayingCard *otherCard = [otherCards firstObject];
+            if ([self.suit isEqualToString:otherCard.suit]) {
+                score = 1;
+            } else if (self.rank == otherCard.rank) {
+                score = 4;
+            }
+        }
+    }else if (otherCards.count > 1) {
+        for (PlayingCard *otherCard in otherCards) {
+            if ([self.suit isEqualToString:otherCard.suit]) {
+                score += 1;
+            } else if (self.rank == otherCard.rank) {
+                score += 4;
+            }
         }
     }
     

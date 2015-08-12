@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>06A984F8-3BA3-4826-BFCE-5CDA4E19A679</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CardDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0B886DC4087E5626C8BC20391495426F6A596119</key>
+		<string>https://github.com/Belly-wang/CardDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CardDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0B886DC4087E5626C8BC20391495426F6A596119</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Belly-wang/CardDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0B886DC4087E5626C8BC20391495426F6A596119</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0B886DC4087E5626C8BC20391495426F6A596119</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CardDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

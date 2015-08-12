@@ -43,10 +43,10 @@
 }
 
 - (void)newGame {
-    for (UIButton *card in self.cardButtons) {
-        [card setTitle:@"" forState:UIControlStateNormal];
-        [card setBackgroundImage:[UIImage imageNamed:@"monkey"] forState:UIControlStateNormal];
-        card.enabled = YES;
+    for (UIButton *cardButton in self.cardButtons) {
+        [cardButton setTitle:@"" forState:UIControlStateNormal];
+        [cardButton setBackgroundImage:[UIImage imageNamed:@"monkey"] forState:UIControlStateNormal];
+        cardButton.enabled = YES;
     }
     self.game = nil;
     self.scoreLabel.text = 0;
@@ -80,7 +80,7 @@
         cardButton.enabled = !card.isMatched;
     }
     self.scoreLabel.text = [NSString stringWithFormat:@"Score:%ld", (long)self.game.score];
-    if (self.game.score < -10) [self endGame];
+    if (self.game.score < -100) [self endGame];
 }
 
 - (NSString *)titleForCard:(Card *)card {
@@ -99,7 +99,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.playCardDeck = [[PlayingCardDeck alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
